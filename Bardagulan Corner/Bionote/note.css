@@ -1,0 +1,93 @@
+
+body { 
+  margin: 0;
+  padding: 0; 
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  /*
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backg.jpg);
+  background-size: cover;
+  background-position: center;
+  */
+  font-size: 15px; 
+  background-color: #8f919b;
+}
+
+button {
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  margin: 5px 0px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009699;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #f5f5f5;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover  {
+  border: none;
+}
+
+div {
+  display: block;
+  position: relative;
+  width: 40%;
+  margin: 120px auto;
+  padding: .5rem;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Times', serif;
+  color: #ffffff;
+}
+
+div p {
+  display: block;
+  position: absolute;
+  font-size: 16px;
+  font-style: bold;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);  
+  top: 120%;
+  padding-left: 100px;
+}
+
+div p button {
+  color: #ffffff;
+}
+
+div p button:hover {
+  color: #1785b5;
+}
+
+div p::after {
+
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url(ID.JPG) no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 20px;
+}
